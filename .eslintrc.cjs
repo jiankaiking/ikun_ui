@@ -10,6 +10,14 @@ module.exports = {
     "@vue/eslint-config-prettier",
     "./.eslintrc-auto-import.json",
   ],
+  overrides: [
+    {
+      files: ['src/views/**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 0
+      }
+    }
+  ],
   parserOptions: {
     ecmaVersion: "latest",
   },
